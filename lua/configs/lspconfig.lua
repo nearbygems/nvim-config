@@ -36,7 +36,7 @@ local servers = {
         cargo = {
           allFeatures = true,
         },
-        checkOnSave = {
+        check = {
           command = "clippy",
         },
         inlayHints = {
