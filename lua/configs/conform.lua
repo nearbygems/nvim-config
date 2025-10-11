@@ -7,15 +7,10 @@ local options = {
     -- Python
     python = { "black" },
 
-    -- Java
-    java = { "google-java-format" },
-
-    -- Kotlin
-    kotlin = { "ktlint" },
-
     -- Общие (если надо)
     json = { "jq" },
     yaml = { "yamlfmt" },
+    rust = { "rustfmt" },
     -- css = { "prettier" },
     -- html = { "prettier" },
   },

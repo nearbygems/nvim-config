@@ -30,11 +30,24 @@ local servers = {
     },
   },
 
-  -- ☕ Java
-  jdtls = {},
+  rust_analyzer = {
+    settings = {
+      ["rust-analyzer"] = {
+        cargo = {
+          allFeatures = true,
+        },
+        checkOnSave = {
+          command = "clippy",
+        },
+        inlayHints = {
+          enable = true,
+          typeHints = { enable = true },
+          parameterHints = { enable = true },
+        },
+      },
+    },
+  },
 
-  -- 🧩 Kotlin
-  kotlin_language_server = {},
 }
 
 for name, opts in pairs(servers) do
