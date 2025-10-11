@@ -1,9 +1,24 @@
-**This repo is supposed to be used as config by NvChad users!**
+# 💤 My NvChad Configuration
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+> Personal Neovim setup based on [NvChad](https://github.com/NvChad/NvChad), optimized for Go, Python, and Rust development.
 
-# Credits
+---
 
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+## ⚙️ Features
+
+- 🦀 **Rust** support via `rust-tools.nvim` and `rust-analyzer`
+- 🐍 **Python** support with `pyright` and `black` for formatting
+- 🐹 **Go** support using `gopls`, `goimports`, and `dlv` for debugging
+- ✨ Enhanced LSP setup with autocompletion (nvim-cmp)
+- 🧭 File navigation with `telescope.nvim`
+- 🎨 Treesitter highlighting and syntax parsing
+- 🪶 Lightweight, fast, and easily extendable setup
+
+---
+
+## 📦 Installation
+
+### 1️⃣ Install NvChad
+```bash
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+
