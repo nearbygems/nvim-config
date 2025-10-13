@@ -7,6 +7,11 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
+map("n", "<A-S-Left>",  ":vertical resize -5<CR>", opts)
+map("n", "<A-S-Right>", ":vertical resize +5<CR>", opts)
+map("n", "<A-S-Up>",    ":resize +2<CR>", opts)
+map("n", "<A-S-Down>",  ":resize -2<CR>", opts)
+
 map("n", "<F5>", "<cmd>lua require'dap'.continue()<CR>", opts)        -- старт/продолжение
 map("n", "<F10>", "<cmd>lua require'dap'.step_over()<CR>", opts)      -- шаг через
 map("n", "<F11>", "<cmd>lua require'dap'.step_into()<CR>", opts)      -- шаг внутрь
@@ -20,4 +25,3 @@ map("n", "<leader>dus", function()
   local sidebar = widgets.sidebar(widgets.scopes)
   sidebar.open()
 end, { desc = "Open debugging sidebar", noremap = true, silent = true })
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

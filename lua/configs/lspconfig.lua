@@ -17,7 +17,6 @@ local servers = {
     },
   },
 
-  -- 🐍 Python
   pyright = {
     settings = {
       python = {
