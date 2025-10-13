@@ -7,8 +7,8 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
-map("n", "<A-S-Left>",  ":vertical resize -5<CR>", opts)
-map("n", "<A-S-Right>", ":vertical resize +5<CR>", opts)
+map("n", "<A-S-Left>",  ":vertical resize +5<CR>", opts)
+map("n", "<A-S-Right>", ":vertical resize -5<CR>", opts)
 map("n", "<A-S-Up>",    ":resize +2<CR>", opts)
 map("n", "<A-S-Down>",  ":resize -2<CR>", opts)
 
